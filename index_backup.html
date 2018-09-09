@@ -1,0 +1,172 @@
+<!--
+Author: Carlos Elguedo - Jorge Hernandez - TableCloth
+-->
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Agenda del curso</title>
+
+
+    <link href="agenda/estilos.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="agenda/codigo.js"></script>
+
+<style>
+
+body{
+	margin:0;
+	padding:0;
+	background:#f1f1f1;
+	font:70% Arial, Helvetica, sans-serif; 
+	color:#555;
+	line-height:150%;
+	text-align:left;
+}
+a{
+	text-decoration:none;
+	color:#057fac;
+}
+a:hover{
+	text-decoration:none;
+	color:#999;
+}
+h1{
+	font-size:140%;
+	margin:0 20px;
+	line-height:80px;	
+}
+h2{
+	font-size:120%;
+}
+#container{
+	margin:0 auto;
+	width:95%;
+        background:#fff;
+        padding-bottom:20px;
+        border: 1px solid green;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+	background:#fff;
+	padding-bottom:20px;
+}
+#content{margin:0 20px;}
+p.sig{	
+	margin:0 auto;
+	width:680px;
+	padding:1em 0;
+}
+form{
+	margin:1em 0;
+	padding:.2em 20px;
+	background:#eee;
+}
+</style>
+
+</head>
+
+<body onload = "setInterval('calcularFecha()',1000);">
+
+<div id="container">
+    <div>
+        <div style="width:420px;float:right;" align="center">
+            <h1>AGENDA DEL CURSO</h1>
+            <h2>Nombre del curso
+                <br/>
+                Periodo del curso
+                <br/>
+                Profesor
+            </h2>
+            <h2>Fecha actual: <span id="fechaActual"></span></h2>
+        </div>
+	<div style="width:500px;" align="center">
+            <img src="agenda/img/logo1.png" alt="Nombre de la institucion">
+        </div>
+    </div>
+	
+	<div id="content">
+
+
+	<!-- all you need with Tablecloth is a regular, well formed table. No need for id's, class names... --> 
+	
+	
+		<table id ="TABLA" cellspacing="0" cellpadding="0">
+            <tr>
+                <th colspan="8">
+                    <center>
+                        <b>Descripción general porcentajes</b>
+                    </center>
+                </th>
+            </tr>
+            <tr><b>
+		<th>Nombre de la unidad</th>
+		<th>Descripción</th>
+		<th>Actividad académica</th>
+		<th>Inicio</th>
+                <th>Final</th>
+                <th>Peso educativo (en puntajes)</th>
+                <th>Fecha de entraga de retroalimentación</th>
+                <th>Finaliza en</th>
+                </b>
+            </tr>
+            <tr>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+                <td id="ffinal_1">Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td id="limite_1">Data</td>
+            </tr>
+            <tr>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+                <td id="ffinal_2">Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td id="limite_2">Data</td>
+            </tr>
+            <tr>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td>Data</td>
+                <td id="ffinal_3">Data</td>
+		<td>Data</td>
+		<td>Data</td>
+		<td id="limite_3">Data</td>
+            </tr>
+	</table>
+		
+
+		
+		
+	</div>
+</div>
+    <script type="text/javascript">
+        actividades = 3;
+        fechaInicial = new Array();
+        fechaFin = new Array();
+
+        //fechaInicial[1] = new Date(año, mes-1, dia, hora, minuto, segundo);
+        fechaInicial[1] = new Date(2018,2,5,0,0,0);
+        fechaInicial[2] = new Date(2018,3,5,0,0,0);
+        fechaInicial[3] = new Date(2018,3,12,0,0,0);
+        
+        
+        fechaFin[1] = new Date(2018,2,15,23,55,0);
+        fechaFin[2] = new Date(2018,3,15,23,55,0);
+        fechaFin[3] = new Date(2018,3,30,23,55,0);
+        
+        //setInterval(cuentaAtras(actividades, fechaInicial, fechaFin),1000);
+        //setInterval(calcularFecha(),1000);
+        
+    </script>
+<p class="sig">Tablecloth is brought to you by <a href="http://www.cssglobe.com">Css Globe</a></p>
+	
+	
+</body>
+</html>

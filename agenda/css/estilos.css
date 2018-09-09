@@ -1,0 +1,62 @@
+/* 
+
+	TableCloth	
+	by Alen Grakalic, brought to you by cssglobe.com
+	
+*/
+
+/* general styles */
+
+table, td{
+	font:100% Arial, Helvetica, sans-serif;
+        
+}
+table{
+    width:100%;border-collapse:collapse;margin:2em 0;
+}
+th, td{
+    font: 16px;
+    text-align:center;
+    padding:.5em;
+    border:1px solid black;
+    
+}
+
+th{
+    background-color: gainsboro;
+    color:black;
+}
+
+td{
+    background-color: whitesmoke;
+}
+
+/* tablecloth styles */
+
+tr.even td{background-color: whitesmoke;}
+tr.odd td{background-color: whitesmoke;}
+
+th.over, tr.even th.over, tr.odd th.over{background:khaki}
+th.down, tr.even th.down, tr.odd th.down{background:khaki;}
+th.selected, tr.even th.selected, tr.odd th.selected{}
+
+td.over, tr.even td.over, tr.odd td.over{background:#ecfbd4;}
+td.down, tr.even td.down, tr.odd td.down{background:khaki;color:#fff;}
+td.selected, tr.even td.selected, tr.odd td.selected{background:khaki;color:#555;}
+
+/* use this if you want to apply different styleing to empty table cells*/
+td.empty, tr.odd td.empty, tr.even td.empty{background:#fff;}
+
+tr :hover{
+    background-color: khaki;
+}
+
+.label_de_form{
+    font-size: 14px;
+    padding: 10px;
+    
+}
+.campo_texto{
+    width: 100%;
+    
+}
